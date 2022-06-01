@@ -428,7 +428,7 @@
             galleryItem.addEventListener("click", () => {
                 imgModelDiv.style.display = "block";
                 let imgSrc = galleryItem.querySelector("img").src;
-                imgIndex = parseInt(imgSrc.split("-")[2].substring(0, 1));
+                imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
                 showImgContent(imgIndex);
             })
         });
